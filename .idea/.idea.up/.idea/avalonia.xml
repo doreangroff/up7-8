@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="up/App.axaml" value="up/up.csproj" />
+        <entry key="up/Attadnadnce_log.axaml" value="up/up.csproj" />
+        <entry key="up/MainWindow.axaml" value="up/up.csproj" />
+        <entry key="up/Views/ClientsWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/CourceWindow.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/ClientsDialogs/AddClientWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/ClientsDialogs/DeleteClientWindow.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/ClientsDialogs/EditClientWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/CourceDialogs/AddCourceWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/CourceDialogs/DeleteCourceWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/Dialogs/CourceDialogs/EditCourceWin.axaml" value="up/up.csproj" />
+        <entry key="up/Views/MainWindow.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Attadnadnce_log/AddAttLog.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Attadnadnce_log/AttLogsWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Attadnadnce_log/DeleteAttLog.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Attadnadnce_log/EditAttLog.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/AddCPaymentWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/AddCpayment.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/CPayments.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/CPaymentsWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/DeleteCPayment.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/CPayments/EditCPayment.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Groups/AddGroup.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Groups/DeleteGroup.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Groups/EditGroup.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Groups/Groups.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/LanguageWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Languages/AddLanguage.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Languages/DeleteLanguage.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Languages/EditLanguage.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Languages/LanguageWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Reports/AttendanceReport.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Reports/Grafik.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Reports/ReportsWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Schedule/ScheduleWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ScheduleDir/AddSchedule.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ScheduleDir/DeleteSchedule.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ScheduleDir/EditSchedule.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ScheduleDir/ScheduleWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ServicePayments/AddSPayments.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ServicePayments/DeleteSPayment.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ServicePayments/EditSPayment.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/ServicePayments/SPaymentsWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Services/AddService.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Services/DeleteService.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Services/EditService.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/Services/ServicesWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/StudentsDir/AddStudent.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/StudentsDir/DeleteStudent.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/StudentsDir/EditStudent.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/StudentsDir/StudentsWin.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/TeachersDir/AddTeacher.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/TeachersDir/DeleteTeacher.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/TeachersDir/EditTeacher.axaml" value="up/up.csproj" />
+        <entry key="up/gavno/TeachersDir/TeachersWin.axaml" value="up/up.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

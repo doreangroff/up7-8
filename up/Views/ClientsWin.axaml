@@ -1,0 +1,68 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:up.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.ClientsWin"
+        x:DataType="viewModels:ClientsViewModel"
+        Title="Клиенты"
+        Height="600"
+        Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Design.DataContext>
+        <viewModels:ClientsViewModel />
+    </Design.DataContext>
+    <Grid ColumnDefinitions="Auto, *">
+        <Grid Grid.Column="0" Width="185" Background="Beige"> <!-- Background="Beige" -->
+            <StackPanel Margin="10, 10, 0, 0" Spacing="10" Orientation="Vertical">
+                    <Button Name="ClientsBtn" Content="Клиенты" Background="Beige" BorderThickness="1" BorderBrush="#0a0a23"></Button>
+                    <Button Name="CourceBtn" Content="Курсы" Background="Beige" Click="CourceBtn_OnClick"></Button>
+                    <Button Name="CPaymentsBtn" Content="Платежи (курсы)" Background="Beige" Click="CPaymentsBtn_OnClick" ></Button>
+                    <Button Name="GroupBtn" Content="Группы" Background="Beige" Click="GroupBtn_OnClick" ></Button>
+                    <Button Name="LanguageBtn" Content="Иностранные языки" Background="Beige" Click="LanguageBtn_OnClick" ></Button>
+                    <Button Name="ScheduleBtn" Content="Расписание" Background="Beige" Click="ScheduleBtn_OnClick"></Button>
+                    <Button Name="AttendanceBtn" Content="Журнал посещений" Background="Beige" Click="AttendanceBtn_OnClick"></Button>
+                    <Button Name="ServiceBtn" Content="Доп услуги" Background="Beige" Click="ServiceBtn_OnClick"></Button>
+                    <Button Name="SPaymentsBtn" Content="Платежи (доп услуги)" Background="Beige" Click="SPaymentsBtn_OnClickPaymentsBtn_OnClick" ></Button>
+                    <Button Name="TeacherBtn" Content="Учителя" Background="Beige" Click="TeacherBtn_OnClick"></Button>
+                    <Button Name="StudentsBtn" Content="Студенты" Background="Beige" Click="StudentsBtn_OnClick"></Button>
+                    <Button Name="ReportsBtn" Content="Отчеты" Background="Beige" Click="ReportsBtn_OnClick"></Button>
+                </StackPanel>
+        </Grid>
+        <Grid Grid.Column="1" RowDefinitions="Auto, *">
+            <Grid Height="40" Grid.Row="0">
+                <TextBox Height="30" Watermark="Поиск клиента" Width="300" Name="SearchClient" Text="{Binding SearchText}" />
+            </Grid>
+            <Grid RowDefinitions="Auto, *"  Grid.Row="1">
+                <DataGrid Grid.Row="0"
+                          x:Name="ClientsGrid"
+                          VerticalAlignment="Top"
+                          Height="400"
+                          Margin="7, 20, 7, 0"
+                          AutoGenerateColumns="False"
+                          ItemsSource="{Binding Clients }"
+                          x:CompileBindings="False"
+                          BorderThickness="1"
+                          BorderBrush="#0a0a23">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id" Binding="{Binding Client_id}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Клиент" Binding="{Binding Client_name}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Телефон" Binding="{Binding Phone_number}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Дата рождения" Binding="{Binding Birthday}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Языковые нужды" Binding="{Binding Language_needs}"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <StackPanel Spacing="30" Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center" Height="100">
+                    <Button  x:Name="AddClient" Width="85" HorizontalAlignment="Left" Content="Добавить"  Click="AddClient_OnClick"/>
+                    <Button  x:Name="EditClient" HorizontalAlignment="Center" Content="Изменить" Click="EditClient_OnClick"></Button>
+                    <Button  x:Name="DelClient" Width="85"  HorizontalAlignment="Center" Content="Удалить"  Click="DelClient_OnClick"/>
+                </StackPanel>
+            </Grid>
+            
+        </Grid>
+        
+        
+    </Grid>
+    
+</Window>

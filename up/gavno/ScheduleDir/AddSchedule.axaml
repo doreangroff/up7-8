@@ -1,0 +1,48 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.gavno.ScheduleDir.AddSchedule"
+        Title="Добавить"
+        Height="600"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Группа</TextBlock>
+        <ComboBox Grid.Row="0" Grid.Column="1" Name="CBGroup" x:CompileBindings="False" Height="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Group_name}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">День недели</TextBlock>
+        <ComboBox Grid.Row="1" Grid.Column="1" Name="CBDay" x:CompileBindings="False" Height="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Day_name}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Время</TextBlock>
+        <TimePicker Grid.Column="1" Grid.Row="2" Name="Picker" HorizontalAlignment="Left"></TimePicker>
+        
+        <StackPanel HorizontalAlignment="Center" Grid.Row="3" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+            <Button Grid.Row="3" Grid.Column="0" Name="BackButton" Content="Вернуться" Click="BackButton_OnClick" />
+            <Button Grid.Row="3" Grid.Column="1" Name="AddButton" Content="Добавить" Click="AddButton_OnClick" />
+        </StackPanel>
+    </Grid>
+</Window>

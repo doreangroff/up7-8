@@ -1,0 +1,68 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:viewModels="clr-namespace:up.ViewModels"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.Views.Dialogs.ClientsDialogs.AddClientWin"
+        x:DataType="viewModels:AddClientViewModel"
+        Title="Редактировать"
+        Height="600"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+        
+        <Design.DataContext>
+                <viewModels:AddClientViewModel />
+        </Design.DataContext>
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="200"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">ID клиента</TextBlock>
+                <TextBox Grid.Column="1" Text="{Binding TBId}" Name="TBxId" Height="10" HorizontalAlignment="Left" Width="300" />
+                
+                <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">ФИО клиента</TextBlock>
+                <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding Name}" Name="TBName" Height="10" HorizontalAlignment="Left" Width="300" />
+                
+                <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Телефон клиента</TextBlock>
+                <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Phone}" Name="TBPhone" Height="10" HorizontalAlignment="Left" Width="300" />
+                
+                <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">Дата рождения</TextBlock>
+                <CalendarDatePicker Grid.Row="3" Grid.Column="1" Text="{Binding Birthday}" Name="DPBirthday" Height="10" HorizontalAlignment="Left" />
+                
+                <TextBlock Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center">Языковые нужды</TextBlock>
+                <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding Needs}" Name="TBNeeds" Height="10" HorizontalAlignment="Left" Width="300" />
+                
+                <TextBlock Grid.Row="5" VerticalAlignment="Center" HorizontalAlignment="Center">Опыт изучения языка</TextBlock>
+                <CheckBox Grid.Row="5" Grid.Column="1" Name="Experience" Checked="Experience_OnChecked" Unchecked="Experience_OnUnchecked" HorizontalAlignment="Left" ></CheckBox>
+                        
+                <ComboBox Grid.Row="6" Name="CBLanguage" PlaceholderText="Выберите язык" PlaceholderForeground="Gray"
+                          x:CompileBindings="False" VerticalAlignment="Center" Width="200" IsVisible="False"
+                        ItemsSource="{Binding LanguagesList}"
+                        SelectedItem="{Binding SelectedLanguage}"
+                        DisplayMemberBinding="{Binding Lan_name}">
+                </ComboBox>
+                <ComboBox Grid.Column="1" Grid.Row="6" Name="CBLevel" PlaceholderText="Уровень" PlaceholderForeground="Gray"
+                          x:CompileBindings="False" VerticalAlignment="Center"  IsVisible="False"
+                          ItemsSource="{Binding LevelsList}"
+                          SelectedItem="{Binding Selectedlevel}"
+                          DisplayMemberBinding="{Binding Level_name}">
+                </ComboBox>
+                
+                <StackPanel HorizontalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+                        <Button Grid.Row="7" Grid.Column="0" Name="BackButton" Content="Вернуться" Click="BackButton_OnClick" />
+                        <Button Grid.Row="7" Grid.Column="1" Name="AddButton" Content="Добавить" Click="AddButton_OnClick" />
+                </StackPanel>
+        </Grid>
+</Window>

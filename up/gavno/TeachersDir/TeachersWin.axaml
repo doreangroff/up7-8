@@ -1,0 +1,55 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.gavno.TeachersDir.TeachersWin"
+        Title="Учителя"
+        Height="600"
+        Width="1000"
+        WindowStartupLocation="CenterScreen">
+        <Grid ColumnDefinitions="Auto, *">
+                <Grid Grid.Column="0" Width="185" Background="Beige"> <!-- Background="Beige" -->
+                        <StackPanel Margin="10, 10, 0, 0" Spacing="10" Orientation="Vertical">
+                                <Button Name="ClientsBtn" Content="Клиенты" Background="Beige" Click="ClientsBtn_OnClick" ></Button>
+                                <Button Name="CourceBtn" Content="Курсы" Background="Beige" Click="CourceBtn_OnClick"></Button>
+                                <Button Name="CPaymentsBtn" Content="Платежи (курсы)" Background="Beige" Click="CPaymentsBtn_OnClick" ></Button>
+                                <Button Name="GroupBtn" Content="Группы" Background="Beige" Click="GroupBtn_OnClick" ></Button>
+                                <Button Name="LanguageBtn" Content="Иностранные языки" Background="Beige" Click="LanguageBtn_OnClick" ></Button>
+                                <Button Name="ScheduleBtn" Content="Расписание" Background="Beige" Click="ScheduleBtn_OnClick"></Button>
+                                <Button Name="AttendanceBtn" Content="Журнал посещений" Background="Beige" Click="AttendanceBtn_OnClick" ></Button>
+                                <Button Name="ServiceBtn" Content="Доп услуги" Background="Beige" Click="ServiceBtn_OnClick"></Button>
+                                <Button Name="SPaymentsBtn" Content="Платежи (доп услуги)" Background="Beige" Click="SPaymentsBtn_OnClickPaymentsBtn_OnClick" ></Button>
+                                <Button Name="TeacherBtn" Content="Учителя" Background="Beige" BorderThickness="1"  BorderBrush="#0a0a23"></Button>
+                                <Button Name="StudentsBtn" Content="Студенты" Background="Beige" Click="StudentsBtn_OnClick"></Button>
+                                <Button Name="ReportsBtn" Content="Отчеты" Background="Beige" Click="ReportsBtn_OnClick"></Button>
+                        </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" RowDefinitions="Auto, *">
+                        <Grid Height="40" Grid.Row="0">
+        <TextBox Watermark="Поиск учителя" Width="300" Name="SearchClient"  TextChanged="SearchClient_OnTextChanged"/>
+                        </Grid>
+                        <Grid RowDefinitions="Auto, *"  Grid.Row="1">
+        <DataGrid
+                x:Name="TeachersGrid"
+                VerticalAlignment="Top"
+                Height="400"
+                Margin="7, 20, 7, 0"
+                AutoGenerateColumns="False"
+                x:CompileBindings="False"
+                BorderThickness="1"
+                BorderBrush="#0a0a23">
+                <DataGrid.Columns>
+                        <DataGridTextColumn Header="Id учителя" Binding="{Binding Teacher_id}"></DataGridTextColumn>
+                        <DataGridTextColumn Header="ФИО учителя" Binding="{Binding Teacher_name}"></DataGridTextColumn>
+                </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Spacing="30" Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center" Height="100">
+                <Button  x:Name="AddClient" Width="85" HorizontalAlignment="Left" Content="Добавить"  Click="AddClient_OnClick"/>
+                <Button  x:Name="EditClient" HorizontalAlignment="Center" Content="Изменить" Click="EditClient_OnClick"></Button>
+                <Button  x:Name="DelClient" Width="85"  HorizontalAlignment="Left" Content="Удалить"  Click="DelClient_OnClick"/>
+        </StackPanel>
+                        </Grid>
+                </Grid>
+        </Grid>
+</Window>

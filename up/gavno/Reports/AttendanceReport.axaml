@@ -1,0 +1,25 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.gavno.Reports.AttendanceReport"
+        Title="Отчет посещаемости"
+        Height="600"
+        Width="600" 
+        WindowStartupLocation="CenterScreen">
+   <DataGrid
+           Name="AttReportGrid"
+           VerticalAlignment="Top"
+           Height="400"
+           Margin="7, 20, 7, 0"
+           AutoGenerateColumns="False"
+           x:CompileBindings="False"
+           BorderThickness="1"
+           BorderBrush="#0a0a23">
+           <DataGrid.Columns>
+               <DataGridTextColumn Header="Студент" Binding="{Binding Student}"></DataGridTextColumn>
+               <DataGridTextColumn Header="Количество прогулов" Binding="{Binding Attendace}"></DataGridTextColumn>
+           </DataGrid.Columns>
+   </DataGrid>
+</Window>

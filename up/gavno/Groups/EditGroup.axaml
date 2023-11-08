@@ -1,0 +1,50 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:up="clr-namespace:up"
+        xmlns:entities="clr-namespace:up.Entities"
+        x:DataType="entities:Group"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="up.gavno.Groups.EditGroup"
+        Title="Редактировать"
+        Height="600"
+        Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center">Номер группы</TextBlock>
+        <TextBox Grid.Column="1" Name="TBxId" Text="{Binding Group_id}" Height="10" HorizontalAlignment="Left" Width="300"/>
+        
+        <TextBlock Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">Название группы</TextBlock>
+        <TextBox Grid.Row="1" Grid.Column="1" Name="TBName" Text="{Binding Group_name}" Height="10" HorizontalAlignment="Left" Width="300"/>
+        
+        <TextBlock Grid.Row="2" VerticalAlignment="Center" HorizontalAlignment="Center">Курс</TextBlock>
+        <ComboBox Grid.Row="2" Grid.Column="1" Name="CBoxCource" x:CompileBindings="False" Height="10" HorizontalAlignment="Left" VerticalAlignment="Center" Width="300">
+            <ComboBox.ItemTemplate>
+                <DataTemplate x:DataType="entities:Courses">
+                    <TextBlock Text="{Binding Course_name}"></TextBlock>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        
+        <TextBlock Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center">Количество мест</TextBlock>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding Stud_max_count}" Name="TBCount" Height="10" HorizontalAlignment="Left" Width="300"/>
+        
+        <StackPanel HorizontalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2" Spacing="10" Orientation="Horizontal">
+            <Button Grid.Row="4" Grid.Column="0" Name="BackButton" Content="Вернуться" Click="BackButton_OnClick" />
+            <Button Grid.Row="4" Grid.Column="1" Name="AddButton" Content="Изменить" Click="AddButton_OnClick" />
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,160 @@
+is_global = true
+build_property.AvaloniaNameGeneratorIsEnabled = true
+build_property.AvaloniaNameGeneratorBehavior = InitializeComponent
+build_property.AvaloniaNameGeneratorDefaultFieldModifier = internal
+build_property.AvaloniaNameGeneratorFilterByPath = *
+build_property.AvaloniaNameGeneratorFilterByNamespace = *
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = up
+build_property.ProjectDir = D:\Рабочий стол\это другое\Фотожабы\upv4\upv3\upv2\up\up\
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/App.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Attadnadnce_log/AddAttLog.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Attadnadnce_log/AttLogsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Attadnadnce_log/DeleteAttLog.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Attadnadnce_log/EditAttLog.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/CPayments/AddCPaymentWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/CPayments/CPaymentsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/CPayments/DeleteCPayment.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/CPayments/EditCPayment.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Groups/AddGroup.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Groups/DeleteGroup.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Groups/EditGroup.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Groups/Groups.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Languages/AddLanguage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Languages/DeleteLanguage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Languages/EditLanguage.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Languages/LanguageWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Reports/AttendanceReport.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Reports/Grafik.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Reports/ReportsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ScheduleDir/AddSchedule.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ScheduleDir/DeleteSchedule.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ScheduleDir/EditSchedule.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ScheduleDir/ScheduleWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ServicePayments/AddSPayments.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ServicePayments/DeleteSPayment.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ServicePayments/EditSPayment.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/ServicePayments/SPaymentsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Services/AddService.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Services/DeleteService.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Services/EditService.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/Services/ServicesWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/StudentsDir/AddStudent.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/StudentsDir/DeleteStudent.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/StudentsDir/EditStudent.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/StudentsDir/StudentsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/TeachersDir/AddTeacher.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/TeachersDir/DeleteTeacher.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/TeachersDir/EditTeacher.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/gavno/TeachersDir/TeachersWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/ClientsWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/CourceWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/ClientsDialogs/AddClientWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/ClientsDialogs/DeleteClientWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/ClientsDialogs/EditClientWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/CourceDialogs/AddCourceWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/CourceDialogs/DeleteCourceWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[D:/Рабочий стол/это другое/Фотожабы/upv4/upv3/upv2/up/up/Views/Dialogs/CourceDialogs/EditCourceWin.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
