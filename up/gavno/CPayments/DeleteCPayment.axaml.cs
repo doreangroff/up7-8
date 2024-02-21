@@ -19,7 +19,7 @@ public partial class DeleteCPayment : Window
         _cp = cp;
     }
 
-    private void Yes_OnClick(object? sender, RoutedEventArgs e)
+    public void Yes_OnClick(object? sender, RoutedEventArgs e)
     {
         string sql = "SET FOREIGN_KEY_CHECKS=0;" + "Delete from Courses_payment where CPayment_id = @CPayment_id LIMIT 1";
         _connection = new MySqlConnection(_con);

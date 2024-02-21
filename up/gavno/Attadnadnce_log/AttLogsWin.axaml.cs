@@ -56,7 +56,7 @@ public partial class AttLogsWin : Window
         AttendanceGrid.ItemsSource = _logs;
     }
 
-    private void SearchClient_OnTextChanged(object? sender, TextChangedEventArgs e)
+    public void SearchClient_OnTextChanged(object? sender, TextChangedEventArgs e)
     {
         List<Attendance_logs> LogSearch = _logs.Where(x => 
             x.Att.Contains(SearchClient.Text, StringComparison.OrdinalIgnoreCase) || 

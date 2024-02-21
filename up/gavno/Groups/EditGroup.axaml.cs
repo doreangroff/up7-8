@@ -59,8 +59,8 @@ public partial class EditGroup : Window
         _connection.Close();
         this.Close();
     }
-    
-    private void FillCources()
+
+    public void FillCources()
     {
         string sql = "select Course_id, Course_name, Teacher_name, Lan_name, cost from Courses" +
                      " join language_school.Languages l on l.Language_id = Courses.Language" +

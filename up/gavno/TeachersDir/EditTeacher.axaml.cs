@@ -28,7 +28,7 @@ public partial class EditTeacher : Window
         this.Close();
     }
 
-    private void AddButton_OnClick(object? sender, RoutedEventArgs e)
+    public void AddButton_OnClick(object? sender, RoutedEventArgs e)
     {
         _teachers = new List<Teachers>();
         MySqlConnection _connection;

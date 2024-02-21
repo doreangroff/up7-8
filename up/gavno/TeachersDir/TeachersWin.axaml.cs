@@ -21,7 +21,7 @@ public partial class TeachersWin : Window
 {
     private string _con = "server=localhost;database=language_school;user=user_1;password=1234"; //"server=10.10.1.24;database=pro1_1;user=user_01;password=user01pro";
                                                                                                  //"server=localhost;database=language_school;user=user_1;password=1234";
-    private List<Teachers> _teachers;
+                                                                                                 public List<Teachers> _teachers;
     private MySqlConnection _connection; 
     public TeachersWin()
     {
@@ -29,7 +29,7 @@ public partial class TeachersWin : Window
         ShowTable();
     }
 
-    private void ShowTable()
+    public void ShowTable()
     {
         string sql = "select * from Teachers";
         _teachers = new List<Teachers>();
@@ -49,7 +49,7 @@ public partial class TeachersWin : Window
         _connection.Close();
         TeachersGrid.ItemsSource = _teachers;    }
 
-    private void SearchClient_OnTextChanged(object? sender, TextChangedEventArgs e)
+    public void SearchClient_OnTextChanged(object? sender, TextChangedEventArgs e)
     {
         List<Teachers> TeacherSearch = _teachers.Where(x => 
             x.Teacher_id.ToString() == SearchClient.Text || 
@@ -67,7 +67,7 @@ public partial class TeachersWin : Window
         add.ShowDialog(this);
     }
 
-    private void EditClient_OnClick(object? sender, RoutedEventArgs e)
+    public void EditClient_OnClick(object? sender, RoutedEventArgs e)
     {
         var myValue = TeachersGrid.SelectedItem as Teachers;
         if (myValue is null)
@@ -85,7 +85,7 @@ public partial class TeachersWin : Window
         };
     }
 
-    private void DelClient_OnClick(object? sender, RoutedEventArgs e)
+    public void DelClient_OnClick(object? sender, RoutedEventArgs e)
     {
         var myValue = TeachersGrid.SelectedItem as Teachers;
         if (myValue is null)
@@ -163,7 +163,7 @@ public partial class TeachersWin : Window
         OpenWindow(report);
     }
 
-    private void ClientsBtn_OnClick(object? sender, RoutedEventArgs e)
+    public void ClientsBtn_OnClick(object? sender, EventArgs e)
     {
         ClientsWin client = new ClientsWin();
         OpenWindow(client);
@@ -179,5 +179,11 @@ public partial class TeachersWin : Window
     {
         AttLogsWin logs = new AttLogsWin();
         OpenWindow(logs);
+    }
+    public List<Teachers> FilterTeachers(string searchText)
+    {
+        return _teachers.Where(x => 
+            x.Teacher_id.ToString() == searchText || 
+            x.Teacher_name.Contains(searchText, StringComparison.OrdinalIgnoreCase)).ToList();
     }
 }

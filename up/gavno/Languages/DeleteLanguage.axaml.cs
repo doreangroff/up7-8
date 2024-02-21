@@ -20,7 +20,7 @@ public partial class DeleteLanguage : Window
         _lan = lan;
     }
 
-    private void Yes_OnClick(object? sender, RoutedEventArgs e)
+    public void Yes_OnClick(object? sender, RoutedEventArgs e)
     {
         string sql = "SET FOREIGN_KEY_CHECKS=0;" + "Delete from Languages where Language_id = @Language_id LIMIT 1";
         _connection = new MySqlConnection(_con);
@@ -33,7 +33,7 @@ public partial class DeleteLanguage : Window
         Close(true);
     }
 
-    private void No_OnClick(object? sender, RoutedEventArgs e)
+    public void No_OnClick(object? sender, RoutedEventArgs e)
     {
         this.Close();
     }

@@ -22,6 +22,7 @@ C:\Users\User\.nuget\packages\avalonia.themes.fluent\11.0.2\lib\net6.0\Avalonia.
 C:\Users\User\.nuget\packages\avalonia.themes.simple\11.0.2\lib\net6.0\Avalonia.Themes.Simple.dll
 C:\Users\User\.nuget\packages\avalonia.win32\11.0.2\lib\net6.0\Avalonia.Win32.dll
 C:\Users\User\.nuget\packages\avalonia.x11\11.0.2\lib\net6.0\Avalonia.X11.dll
+C:\Users\User\.nuget\packages\castle.core\5.1.1\lib\net6.0\Castle.Core.dll
 C:\Users\User\.nuget\packages\dynamicdata\7.9.5\lib\net6.0\DynamicData.dll
 C:\Users\User\.nuget\packages\harfbuzzsharp\2.8.2.3\lib\net6.0\HarfBuzzSharp.dll
 C:\Users\User\.nuget\packages\microcom.runtime\0.11.0\lib\net5.0\MicroCom.Runtime.dll
@@ -38,6 +39,8 @@ C:\Users\User\.nuget\packages\microsoft.win32.systemevents\6.0.0\lib\net6.0\Micr
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\mscorlib.dll
 C:\Users\User\.nuget\packages\mysqlconnector\2.2.7\lib\net7.0\MySqlConnector.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\netstandard.dll
+C:\Users\User\.nuget\packages\nsubstitute\5.1.0\lib\net6.0\NSubstitute.dll
+C:\Users\User\.nuget\packages\nunit\3.13.3\lib\netstandard2.0\nunit.framework.dll
 C:\Users\User\.nuget\packages\oxyplot.avalonia\2.1.0\lib\netstandard2.0\OxyPlot.Avalonia.dll
 C:\Users\User\.nuget\packages\oxyplot.core\2.1.2\lib\netstandard2.0\OxyPlot.dll
 C:\Users\User\.nuget\packages\reactiveui\18.3.1\lib\net6.0\ReactiveUI.dll
@@ -65,6 +68,7 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.Contracts.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.Debug.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\.nuget\packages\system.diagnostics.eventlog\6.0.0\lib\net6.0\System.Diagnostics.EventLog.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.FileVersionInfo.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.Process.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\7.0.2\ref\net7.0\System.Diagnostics.StackTrace.dll

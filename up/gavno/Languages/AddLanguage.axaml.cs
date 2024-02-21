@@ -25,7 +25,7 @@ public partial class AddLanguage : Window
         this.Close();
     }
 
-    private void AddButton_OnClick(object? sender, RoutedEventArgs e)
+    public void AddButton_OnClick(object? sender, RoutedEventArgs e)
     {
         _languages = new List<Entities.Languages>();
         MySqlConnection _connection;
